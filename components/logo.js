@@ -18,7 +18,7 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
+  const footPrintImg = `/images/logo${useColorModeValue('', '-dark')}.png`
 
   return (
     <Link href="/">
@@ -27,9 +27,10 @@ const Logo = () => {
           <Image src={footPrintImg} width={20} height={20} alt="logo"></Image>
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily="M Plus Rounded ic"
+            fontFamily="M Plus Rounded 1c"
             fontWeight="bold"
             ml={3}
+            isTruncated
           >
             Gusade Taruna
           </Text>

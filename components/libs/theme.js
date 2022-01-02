@@ -33,7 +33,7 @@ const components = {
 }
 
 const fonts = {
-    heading: "'M PLUS Rounded ic'"
+    heading: "'M PLUS Rounded 1c'"
 }
 
 const colors = {
