@@ -11,6 +11,7 @@ import {
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
   return (
@@ -21,6 +22,7 @@ const Page = () => {
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         p={3}
         mb={6}
+        mt={4}
         align="center"
       >
         Hello, I&apos;m a web developer based in Indonesia!
@@ -75,6 +77,29 @@ const Page = () => {
           </NextLink>
         </Box>
 
+      </Section>
+
+      <Section delay={0.2}>
+        <Heading as='h3' variant='section-title'>
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>1999</BioYear>
+          Born in Buleleng, Bali, Indonesia.
+        </BioSection>
+        <BioSection>
+          <BioYear>2021</BioYear>
+          Completed the Bachelor's Degree on Information Technology major at Udayana University.
+        </BioSection>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as='h3' variant='section-title'>
+          Interest
+        </Heading>
+        <Paragraph>
+          Art, Music, Gaming, Photography, Coding, Learning new things
+        </Paragraph>
       </Section>
     </Container>
   )
